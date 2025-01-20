@@ -1,5 +1,9 @@
 # Service Worker build issue demo for SvelteKit
 
-With `"@sveltejs/kit": "2.12.1",` the `service-worker/index.ts` file has been built and generated into `.svelte-kit/output/client/service-worker.mjs`
+**Expected:**
 
-With `"@sveltejs/kit": "2.12.2",` the `service-worker/index.ts` file hasn't been built and missing from the app.
+With `"@sveltejs/kit": "2.12.1",` the `service-worker/index.ts` file compiled and generated in `.svelte-kit/output/client/service-worker.mjs` (see "Initial commit")
+
+**Issue:**
+
+With `"@sveltejs/kit": "2.12.2",` and later versions doesn't compile the `service-worker/index.ts` file and it's missing from the app dir (see "Issue" commit message)
